@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDhZl_S164BGxPIbidYemLqATro1xYOtg&callback=myMap"></script>
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(43.6187, 116.2146);
+            var mapCanvas = document.getElementById("googleMap");
+            var mapOptions = {
+                center: myCenter,
+                zoom: 5
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+        }
+    </script>
+    <style>
+        div {
+            border: 1px black solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row row-a">
+            <div class="col-sm-6">
+                <div class="pad-1">
+                    <h1>Styl.us</h1>
+                    <p>Turn your pen into you best friend</p>
+                    <p>Make every line you write count...</p>
+                    <button class="btn btn-primary">GET YOUR STYLUS</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 pad-4">
+                        <h5>Icon-1</h5>
+                        <p>words-1</p>
+                    </div>
+                    <div class="col-sm-3 pad-4">
+                        <h5>Icon-2</h5>
+                        <p>words-2</p>
+                    </div>
+                    <div class="col-sm-3 pad-4">
+                        <h5>Icon-3</h5>
+                        <p>words-3</p>
+                    </div>
+                    <div class="col-sm-3 pad-4">
+                        <h5>Icon-4</h5>
+                        <p>words-4</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-4">
+                <h3>Get news from stylus</h3>
+                <p>Leave us your mail and get stylus news</p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="E-mail">
+                    <button class- "input-group-append btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="googleMap" style="width:100%; min-height: 200px; height:400px;"></div>
+        </div>
+        <div class="row row-e justify-content-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4>
+                            <i class="fa fw fa-2x fa-facebook"></i>
+                            <i class="fa fw fa-2x m-l-1 fa-twitter"></i>
+                            <i class="fa fw fa-2x m-l-1 fa-globe"></i>
+                            <i class="fa fw fa-2x m-l-1 fa-youtube"></i>
+                            <i class="fa fw fa-2x m-l-1 fa-rss"></i>
+                        </h4>
+                    </div>
+                    <div class="col-sm-5">Copywright Info</div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
